@@ -1,0 +1,10 @@
+package com.htjx.sdk;
+
+
+
+public abstract class BaseParser<T> {
+	
+	 public abstract T parseJSON(String str);
+	 
+	
+}

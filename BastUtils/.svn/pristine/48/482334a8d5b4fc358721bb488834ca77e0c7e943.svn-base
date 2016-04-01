@@ -1,0 +1,53 @@
+package com.htjx.sdk;
+
+import java.io.Serializable;
+
+public class FeedBack implements Serializable{
+
+	private static final long serialVersionUID = 4536509312882610772L;
+	private int code;
+	private String interfaceName;
+	private String result;
+	
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public String getInterfaceName() {
+		return interfaceName;
+	}
+	public void setInterfaceName(String interfaceName) {
+		this.interfaceName = interfaceName;
+	}
+	
+	public String getResult() {
+		return result;
+	}
+	public void setResult(String result) {
+		this.result = result;
+	}
+	public FeedBack(int code, String interfaceName) {
+		super();
+		this.code = code;
+		this.interfaceName = interfaceName;
+	}
+	
+	public FeedBack(int code, String interfaceName, String result) {
+		super();
+		this.code = code;
+		this.interfaceName = interfaceName;
+		this.result = result;
+	}
+	public FeedBack() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "FeedBack [code=" + code + ", interfaceName=" + interfaceName
+				+ ", result=" + result + "]";
+	}
+
+	
+}

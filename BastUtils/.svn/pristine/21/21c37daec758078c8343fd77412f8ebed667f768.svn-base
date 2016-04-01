@@ -1,0 +1,15 @@
+package com.htjx.sdk;
+
+import android.content.Context;
+
+public class HtjxSDK {
+	
+	public static void onResume(Context context){
+		CrashHandler.getInstance().init(context);
+		
+	}
+	public static void onPause(Context context){
+		
+	}
+
+}

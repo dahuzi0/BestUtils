@@ -1,0 +1,322 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/misc.xml
+* .idea/workspace.xml
+* app/
+* app/build.gradle
+* app/libs/
+* app/libs/fastjson.jar
+* app/libs/locSDK_4.2.jar
+* app/libs/umeng-analytics-v5.2.4.jar
+* app/src/
+* app/src/main/
+* app/src/main/AndroidManifest.xml
+* app/src/main/assets/
+* app/src/main/assets/xdy.apk
+* app/src/main/java/
+* app/src/main/java/com/
+* app/src/main/java/com/htjx/
+* app/src/main/java/com/htjx/sdk/
+* app/src/main/java/com/htjx/sdk/CrashHandler.java
+* app/src/main/java/com/htjx/sdk/HtjxSDK.java
+* app/src/main/java/com/htjx/sdk/MainActivity.java
+* app/src/main/java/com/htjx/sdk/domain/
+* app/src/main/java/com/htjx/sdk/domain/FormFile.java
+* app/src/main/java/com/htjx/sdk/domain/Push.java
+* app/src/main/java/com/htjx/sdk/domain/Response.java
+* app/src/main/java/com/htjx/sdk/domain/UpdateInfo.java
+* app/src/main/java/com/htjx/sdk/domain/UploadFile.java
+* app/src/main/java/com/htjx/sdk/download/
+* app/src/main/java/com/htjx/sdk/download/DownloadInfo.java
+* app/src/main/java/com/htjx/sdk/download/Downloader.java
+* app/src/main/java/com/htjx/sdk/download/DownloaderFast.java
+* app/src/main/java/com/htjx/sdk/net/
+* app/src/main/java/com/htjx/sdk/net/BaseParser.java
+* app/src/main/java/com/htjx/sdk/net/FeedbackParser.java
+* app/src/main/java/com/htjx/sdk/net/PushParser.java
+* app/src/main/java/com/htjx/sdk/net/RequestVo.java
+* app/src/main/java/com/htjx/sdk/net/ThreadPoolManager.java
+* app/src/main/java/com/htjx/sdk/net/UpdateInfoParser.java
+* app/src/main/java/com/htjx/sdk/reciver/
+* app/src/main/java/com/htjx/sdk/reciver/BootReciver.java
+* app/src/main/java/com/htjx/sdk/reciver/NetStateReciver.java
+* app/src/main/java/com/htjx/sdk/service/
+* app/src/main/java/com/htjx/sdk/service/HtjxSDKService.java
+* app/src/main/java/com/htjx/sdk/upload/
+* app/src/main/java/com/htjx/sdk/upload/SocketHttpRequester.java
+* app/src/main/java/com/htjx/sdk/upload/Uploader.java
+* app/src/main/java/com/htjx/sdk/utils/
+* app/src/main/java/com/htjx/sdk/utils/ActivityUtils.java
+* app/src/main/java/com/htjx/sdk/utils/ApkUtils.java
+* app/src/main/java/com/htjx/sdk/utils/AppInfoUtil.java
+* app/src/main/java/com/htjx/sdk/utils/BaseParamsMapUtil.java
+* app/src/main/java/com/htjx/sdk/utils/FileUtils.java
+* app/src/main/java/com/htjx/sdk/utils/ImageUtil.java
+* app/src/main/java/com/htjx/sdk/utils/LocationUtils.java
+* app/src/main/java/com/htjx/sdk/utils/LogUtils.java
+* app/src/main/java/com/htjx/sdk/utils/MyASyncProgress.java
+* app/src/main/java/com/htjx/sdk/utils/MyAsyncTask.java
+* app/src/main/java/com/htjx/sdk/utils/MyDateUtils.java
+* app/src/main/java/com/htjx/sdk/utils/NetUtil.java
+* app/src/main/java/com/htjx/sdk/utils/StringUtils.java
+* app/src/main/jniLibs/
+* app/src/main/jniLibs/armeabi/
+* app/src/main/jniLibs/armeabi/liblocSDK4d.so
+* app/src/main/res/
+* app/src/main/res/drawable-hdpi/
+* app/src/main/res/drawable-hdpi/icon.png
+* app/src/main/res/drawable-mdpi/
+* app/src/main/res/drawable-mdpi/icon.png
+* app/src/main/res/drawable-xhdpi/
+* app/src/main/res/drawable-xhdpi/icon.png
+* app/src/main/res/drawable-xxhdpi/
+* app/src/main/res/drawable-xxhdpi/icon.png
+* app/src/main/res/layout/
+* app/src/main/res/layout/activity_main.xml
+* app/src/main/res/layout/dialog_update_apk.xml
+* app/src/main/res/menu/
+* app/src/main/res/menu/main.xml
+* app/src/main/res/values-sw600dp/
+* app/src/main/res/values-sw600dp/dimens.xml
+* app/src/main/res/values-sw720dp-land/
+* app/src/main/res/values-sw720dp-land/dimens.xml
+* app/src/main/res/values/
+* app/src/main/res/values/dimens.xml
+* app/src/main/res/values/strings.xml
+* app/src/main/res/values/styles.xml
+* build.gradle
+* doc/
+* doc/allclasses-frame.html
+* doc/allclasses-noframe.html
+* doc/com/
+* doc/com/htjx/
+* doc/com/htjx/sdk/
+* doc/com/htjx/sdk/BuildConfig.html
+* doc/com/htjx/sdk/CrashHandler.html
+* doc/com/htjx/sdk/HtjxSDK.html
+* doc/com/htjx/sdk/R.attr.html
+* doc/com/htjx/sdk/R.dimen.html
+* doc/com/htjx/sdk/R.drawable.html
+* doc/com/htjx/sdk/R.html
+* doc/com/htjx/sdk/R.id.html
+* doc/com/htjx/sdk/R.layout.html
+* doc/com/htjx/sdk/R.menu.html
+* doc/com/htjx/sdk/R.string.html
+* doc/com/htjx/sdk/R.style.html
+* doc/com/htjx/sdk/class-use/
+* doc/com/htjx/sdk/class-use/BuildConfig.html
+* doc/com/htjx/sdk/class-use/CrashHandler.html
+* doc/com/htjx/sdk/class-use/HtjxSDK.html
+* doc/com/htjx/sdk/class-use/R.attr.html
+* doc/com/htjx/sdk/class-use/R.dimen.html
+* doc/com/htjx/sdk/class-use/R.drawable.html
+* doc/com/htjx/sdk/class-use/R.html
+* doc/com/htjx/sdk/class-use/R.id.html
+* doc/com/htjx/sdk/class-use/R.layout.html
+* doc/com/htjx/sdk/class-use/R.menu.html
+* doc/com/htjx/sdk/class-use/R.string.html
+* doc/com/htjx/sdk/class-use/R.style.html
+* doc/com/htjx/sdk/domain/
+* doc/com/htjx/sdk/domain/FormFile.html
+* doc/com/htjx/sdk/domain/Push.html
+* doc/com/htjx/sdk/domain/Response.html
+* doc/com/htjx/sdk/domain/UpdateInfo.html
+* doc/com/htjx/sdk/domain/UploadFile.html
+* doc/com/htjx/sdk/domain/class-use/
+* doc/com/htjx/sdk/domain/class-use/FormFile.html
+* doc/com/htjx/sdk/domain/class-use/Push.html
+* doc/com/htjx/sdk/domain/class-use/Response.html
+* doc/com/htjx/sdk/domain/class-use/UpdateInfo.html
+* doc/com/htjx/sdk/domain/class-use/UploadFile.html
+* doc/com/htjx/sdk/domain/package-frame.html
+* doc/com/htjx/sdk/domain/package-summary.html
+* doc/com/htjx/sdk/domain/package-tree.html
+* doc/com/htjx/sdk/domain/package-use.html
+* doc/com/htjx/sdk/download/
+* doc/com/htjx/sdk/download/DownloadInfo.html
+* doc/com/htjx/sdk/download/Downloader.html
+* doc/com/htjx/sdk/download/class-use/
+* doc/com/htjx/sdk/download/class-use/DownloadInfo.html
+* doc/com/htjx/sdk/download/class-use/Downloader.html
+* doc/com/htjx/sdk/download/package-frame.html
+* doc/com/htjx/sdk/download/package-summary.html
+* doc/com/htjx/sdk/download/package-tree.html
+* doc/com/htjx/sdk/download/package-use.html
+* doc/com/htjx/sdk/net/
+* doc/com/htjx/sdk/net/BaseParser.html
+* doc/com/htjx/sdk/net/FeedbackParser.html
+* doc/com/htjx/sdk/net/PushParser.html
+* doc/com/htjx/sdk/net/RequestVo.html
+* doc/com/htjx/sdk/net/ThreadPoolManager.html
+* doc/com/htjx/sdk/net/UpdateInfoParser.html
+* doc/com/htjx/sdk/net/class-use/
+* doc/com/htjx/sdk/net/class-use/BaseParser.html
+* doc/com/htjx/sdk/net/class-use/FeedbackParser.html
+* doc/com/htjx/sdk/net/class-use/PushParser.html
+* doc/com/htjx/sdk/net/class-use/RequestVo.html
+* doc/com/htjx/sdk/net/class-use/ThreadPoolManager.html
+* doc/com/htjx/sdk/net/class-use/UpdateInfoParser.html
+* doc/com/htjx/sdk/net/package-frame.html
+* doc/com/htjx/sdk/net/package-summary.html
+* doc/com/htjx/sdk/net/package-tree.html
+* doc/com/htjx/sdk/net/package-use.html
+* doc/com/htjx/sdk/package-frame.html
+* doc/com/htjx/sdk/package-summary.html
+* doc/com/htjx/sdk/package-tree.html
+* doc/com/htjx/sdk/package-use.html
+* doc/com/htjx/sdk/reciver/
+* doc/com/htjx/sdk/reciver/BootReciver.html
+* doc/com/htjx/sdk/reciver/NetStateReciver.html
+* doc/com/htjx/sdk/reciver/class-use/
+* doc/com/htjx/sdk/reciver/class-use/BootReciver.html
+* doc/com/htjx/sdk/reciver/class-use/NetStateReciver.html
+* doc/com/htjx/sdk/reciver/package-frame.html
+* doc/com/htjx/sdk/reciver/package-summary.html
+* doc/com/htjx/sdk/reciver/package-tree.html
+* doc/com/htjx/sdk/reciver/package-use.html
+* doc/com/htjx/sdk/service/
+* doc/com/htjx/sdk/service/HtjxSDKService.html
+* doc/com/htjx/sdk/service/class-use/
+* doc/com/htjx/sdk/service/class-use/HtjxSDKService.html
+* doc/com/htjx/sdk/service/package-frame.html
+* doc/com/htjx/sdk/service/package-summary.html
+* doc/com/htjx/sdk/service/package-tree.html
+* doc/com/htjx/sdk/service/package-use.html
+* doc/com/htjx/sdk/upload/
+* doc/com/htjx/sdk/upload/SocketHttpRequester.html
+* doc/com/htjx/sdk/upload/Uploader.html
+* doc/com/htjx/sdk/upload/class-use/
+* doc/com/htjx/sdk/upload/class-use/SocketHttpRequester.html
+* doc/com/htjx/sdk/upload/class-use/Uploader.html
+* doc/com/htjx/sdk/upload/package-frame.html
+* doc/com/htjx/sdk/upload/package-summary.html
+* doc/com/htjx/sdk/upload/package-tree.html
+* doc/com/htjx/sdk/upload/package-use.html
+* doc/com/htjx/sdk/utils/
+* doc/com/htjx/sdk/utils/ActivityUtils.html
+* doc/com/htjx/sdk/utils/ApkUtils.html
+* doc/com/htjx/sdk/utils/AppInfoUtil.html
+* doc/com/htjx/sdk/utils/BaseParamsMapUtil.html
+* doc/com/htjx/sdk/utils/FileUtils.html
+* doc/com/htjx/sdk/utils/ImageUtil.ImageCallback.html
+* doc/com/htjx/sdk/utils/ImageUtil.html
+* doc/com/htjx/sdk/utils/LocationUtils.html
+* doc/com/htjx/sdk/utils/LogUtils.html
+* doc/com/htjx/sdk/utils/MyASyncProgress.html
+* doc/com/htjx/sdk/utils/MyAsyncTask.html
+* doc/com/htjx/sdk/utils/MyDateUtils.html
+* doc/com/htjx/sdk/utils/NetUtil.html
+* doc/com/htjx/sdk/utils/class-use/
+* doc/com/htjx/sdk/utils/class-use/ActivityUtils.html
+* doc/com/htjx/sdk/utils/class-use/ApkUtils.html
+* doc/com/htjx/sdk/utils/class-use/AppInfoUtil.html
+* doc/com/htjx/sdk/utils/class-use/BaseParamsMapUtil.html
+* doc/com/htjx/sdk/utils/class-use/FileUtils.html
+* doc/com/htjx/sdk/utils/class-use/ImageUtil.ImageCallback.html
+* doc/com/htjx/sdk/utils/class-use/ImageUtil.html
+* doc/com/htjx/sdk/utils/class-use/LocationUtils.html
+* doc/com/htjx/sdk/utils/class-use/LogUtils.html
+* doc/com/htjx/sdk/utils/class-use/MyASyncProgress.html
+* doc/com/htjx/sdk/utils/class-use/MyAsyncTask.html
+* doc/com/htjx/sdk/utils/class-use/MyDateUtils.html
+* doc/com/htjx/sdk/utils/class-use/NetUtil.html
+* doc/com/htjx/sdk/utils/package-frame.html
+* doc/com/htjx/sdk/utils/package-summary.html
+* doc/com/htjx/sdk/utils/package-tree.html
+* doc/com/htjx/sdk/utils/package-use.html
+* doc/constant-values.html
+* doc/deprecated-list.html
+* doc/help-doc.html
+* doc/index-files/
+* doc/index-files/index-1.html
+* doc/index-files/index-10.html
+* doc/index-files/index-11.html
+* doc/index-files/index-12.html
+* doc/index-files/index-13.html
+* doc/index-files/index-14.html
+* doc/index-files/index-15.html
+* doc/index-files/index-16.html
+* doc/index-files/index-17.html
+* doc/index-files/index-18.html
+* doc/index-files/index-19.html
+* doc/index-files/index-2.html
+* doc/index-files/index-20.html
+* doc/index-files/index-21.html
+* doc/index-files/index-3.html
+* doc/index-files/index-4.html
+* doc/index-files/index-5.html
+* doc/index-files/index-6.html
+* doc/index-files/index-7.html
+* doc/index-files/index-8.html
+* doc/index-files/index-9.html
+* doc/index.html
+* doc/overview-frame.html
+* doc/overview-summary.html
+* doc/overview-tree.html
+* doc/package-list
+* doc/resources/
+* doc/resources/inherit.gif
+* doc/serialized-form.html
+* doc/stylesheet.css
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/armeabi/liblocSDK4d.so => app/src/main/jniLibs/armeabi/liblocSDK4d.so
+* libs/fastjson.jar => app/libs/fastjson.jar
+* libs/locSDK_4.2.jar => app/libs/locSDK_4.2.jar
+* libs/umeng-analytics-v5.2.4.jar => app/libs/umeng-analytics-v5.2.4.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

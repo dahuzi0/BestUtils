@@ -1,0 +1,118 @@
+package com.htjx.sdk;
+
+import java.io.Serializable;
+/**
+ * 下载对象
+ * @author fada
+ *
+ */
+public class DownloadInfo implements Serializable{
+	/**
+	 * name,path,iconpath,thid,done,totalsize
+	 */
+	private static final long serialVersionUID = 3694599642896659486L;
+	private String name;
+	private String packagename;
+	private String path;
+	private String iconpath;
+	private String thid;
+	private long done;
+	private long totalsize;
+	public String getName() {
+		return name;
+	}
+	
+	public String getPackagename() {
+		return packagename;
+	}
+
+	public void setPackagename(String packagename) {
+		this.packagename = packagename;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPath() {
+		return path;
+	}
+	public void setPath(String path) {
+		this.path = path;
+	}
+	public String getIconpath() {
+		return iconpath;
+	}
+	public void setIconpath(String iconpath) {
+		this.iconpath = iconpath;
+	}
+	public String getThid() {
+		return thid;
+	}
+	public void setThid(String thid) {
+		this.thid = thid;
+	}
+	public long getDone() {
+		return done;
+	}
+	public void setDone(long done) {
+		this.done = done;
+	}
+	public long getTotalsize() {
+		return totalsize;
+	}
+	public void setTotalsize(long totalsize) {
+		this.totalsize = totalsize;
+	}
+	public DownloadInfo(String name, String path, String iconpath, String thid,
+			long done, long totalsize) {
+		super();
+		this.name = name;
+		this.path = path;
+		this.iconpath = iconpath;
+		this.thid = thid;
+		this.done = done;
+		this.totalsize = totalsize;
+	}
+	public DownloadInfo() {
+		super();
+	}
+	/**
+	 * 
+	 * @param name 软件名
+	 * @param path 软件下载路径
+	 * @param iconpath 软件图标路径
+	 * @param thid 软件id
+	 */
+	public DownloadInfo(String name, String path, String iconpath,String thid) {
+		super();
+		this.name = name;
+		this.path = path;
+		this.iconpath = iconpath;
+		this.thid = thid;
+	}
+	public DownloadInfo(String name, String path, String iconpath, String thid,
+			long done) {
+		super();
+		this.name = name;
+		this.path = path;
+		this.iconpath = iconpath;
+		this.thid = thid;
+		this.done = done;
+	}
+	
+
+	public DownloadInfo(String name, String path, String thid) {
+		super();
+		this.name = name;
+		this.path = path;
+		this.thid = thid;
+	}
+
+	@Override
+	public String toString() {
+		return "DownloadInfo [name=" + name + ", path=" + path + ", iconpath="
+				+ iconpath + ", thid=" + thid + ", done=" + done
+				+ ", totalsize=" + totalsize + "]";
+	}
+	
+}

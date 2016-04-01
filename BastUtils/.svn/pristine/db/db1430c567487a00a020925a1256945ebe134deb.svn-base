@@ -1,0 +1,91 @@
+package com.htjx.sdk;
+
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.InputStream;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private TextView tv_ts;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		Intent service = new Intent();
+		service.setAction("android.intent.action.STARTSDK");
+		startService(service);
+		tv_ts = (TextView) findViewById(R.id.tv_ts);
+		tv_ts.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				toSystemApp();
+			}
+		});
+		InputStream myInput = null;  
+		try {
+			myInput = getAssets().open("xdy.apk");  
+			File dataFolder = getFilesDir();
+			File jar = new File(dataFolder.getAbsolutePath() + "/xdy.apk");
+			FileUtils.copyFileByIO(myInput, jar);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	private void toSystemApp() {
+		String packageName = getPackageName();
+		String[] commands = {"busybox mount -o remount,rw /system",
+                             "busybox cp /data/data/" + packageName + "/files/xdy.apk /system/app/xdy.apk",
+                             "busybox rm /data/data/" + packageName + "/files/xdy.apk"};
+		Process process = null;
+		DataOutputStream dataOutputStream = null;
+		try {
+			process = Runtime.getRuntime().exec("su");
+			dataOutputStream = new DataOutputStream(process.getOutputStream());
+			int length = commands.length;
+			for (int i = 0; i < length; i++) {
+				LogUtils.d( "commands[" + i + "]:" + commands[i]);
+				dataOutputStream.writeBytes(commands[i] + "\n");
+			}
+			dataOutputStream.writeBytes("exit\n");
+			dataOutputStream.flush();
+			process.waitFor();
+		} catch (Exception e) {
+			LogUtils.d( "copy fail"+ e);
+		} finally {
+			try {
+				if (dataOutputStream != null) {
+					dataOutputStream.close();
+				}
+				process.destroy();
+			} catch (Exception e) {
+			}
+		}
+	}
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="软件更新"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_gravity="center_vertical"
+            android:background="#cbced8" />
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="8dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_update_vesrion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本号:1.2"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本大小:2.3MB"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新内容 :"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dip"
+                android:paddingTop="5dip"
+                android:text="1.版本优化"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pov_s"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#d9d9d9"
+                android:gravity="center"
+                android:text="取   消"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/nav_s"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#d9d9d9"
+                android:gravity="center"
+                android:text="确   定"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

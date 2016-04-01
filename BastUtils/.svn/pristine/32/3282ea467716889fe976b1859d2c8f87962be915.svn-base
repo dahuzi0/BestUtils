@@ -1,0 +1,74 @@
+package com.htjx.sdk;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+/**
+ * 请求参数工具类
+ * @author fada
+ *
+ */
+public class BaseParamsMapUtil {
+	private static String imei;
+	private static String imsi;
+	private static String mac;
+	private static String xid;
+	private static String cid;
+	/**
+	 * 通用标准参数
+	 * @return
+	 */
+	public static Map<String, String> getParamsMap(Context context) {
+		Map<String, String> paramsMap = new HashMap<String, String>();
+		if(imei==null){
+			imei=AppInfoUtil.getIMEI(context);
+		}
+		paramsMap.put("imei", AppInfoUtil.getIMEI(context));
+		if(imsi==null){
+			imsi=AppInfoUtil.getIMSI(context);
+		}
+		paramsMap.put("imsi",imsi);
+		if(mac==null){
+			mac=AppInfoUtil.getMacAddress(context);
+		}
+		paramsMap.put("mac",mac);
+		if(xid==null){
+			xid=AppInfoUtil.getXid(context);
+		}
+		paramsMap.put("xid",xid);
+		if(cid==null){
+			try {
+				ApplicationInfo appInfo = context.getPackageManager()
+						.getApplicationInfo(context.getPackageName(),
+								PackageManager.GET_META_DATA);
+				cid =String.valueOf(appInfo.metaData.getInt("UMENG_CHANNEL"));
+			} catch (Exception e) {
+				cid=""+-1;
+				e.printStackTrace();
+			}
+			
+			
+		}
+		paramsMap.put("cid",cid);
+		return paramsMap;
+	}
+
+		/**
+	 * 作弊提交
+	 * @param cid
+	 * @param name
+	 * @param ver
+	 * @return
+	 */
+		public static Map<String, String> submitCheatCid(Context context,String className,String ver) {
+			Map<String, String> paramsMap = getParamsMap(context);
+			paramsMap.put("interfaceName", "submitCheatCid");
+			paramsMap.put("className", className);
+			paramsMap.put("ver", ver == null ? "" : ver);
+			return paramsMap;
+		}
+	
+}
